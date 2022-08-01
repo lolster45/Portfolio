@@ -1,0 +1,204 @@
+* {
+    padding: 0 0 0 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+#navbar ul {
+    display: inline-block;
+    background-color: rgb(14,17,17);
+    text-align: end;
+    margin-top: 0px;
+    width: 100%;
+    border: 0 none transparent;
+    position: fixed;
+    z-index: 1;
+}
+#navbar ul li {
+    display: inline-block;
+    list-style: none;
+    text-transform: uppercase;
+    margin-left: 20px;
+    padding: 20px 20px 20px 20px;
+    font-size: 20px;
+    
+    
+}
+#navbar ul li a {
+    display: inline-block;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    color: black;
+    margin-left: 10px;
+    color: white;
+}
+
+#welcome-section {
+    background-image: url(https://wallpaperaccess.com/full/1157063.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    /*background-size: ;*/
+}
+#welcome-section {
+    font-family: 'Open Sans', Arial, sans-serif;
+    background-color: rgb(102, 179, 241);
+    width: 100%;
+    height: 800px;
+    position: relative;
+}
+#welcome-section header {
+    text-align: center;
+    margin-bottom: 10px;
+    padding-top: 90px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+}
+#welcome-section p {
+    text-align: center;
+    margin-bottom: 10px;
+    padding-top: 90px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+}
+
+
+
+#projects header {
+    font-family: 'Open Sans', Arial, sans-serif;
+    position: relative;
+}
+#projects header {
+    text-align: center;
+    margin-bottom: 10px;
+    padding-top: 10px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+    text-decoration: underline;
+}
+
+#projects {
+    height: 1000px;
+    width: 100%;
+    background-image: url(https://images.hdqwalls.com/download/dark-red-black-abstract-4k-pa-1920x1080.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.project-tile {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 430px 430px;
+    grid-template-rows: 300px 300px;
+    grid-gap: 100px;
+    justify-content: center;
+    grid-auto-flow: dense;
+    
+}
+
+.tribCap {
+    
+    height: 40px;
+    padding: 5px 5px 5px 5px;
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    background-color: #590202;
+    color: #ffffff;
+    margin-top: -4px; 
+    border-radius: 5px;
+}
+.tribCap a {
+    color: white;
+    text-decoration: none;
+}
+.img1 img, .img2 img, .img3 img, .img4 img {
+    border-radius: 5px;
+}
+
+.img1 {
+    transition: transform .5s;
+}
+
+.img2 {
+    transition: transform .5s;
+}
+.img3 {
+    transition: transform .5s;
+}
+.img4 {
+    transition: transform .5s;
+}
+
+.img1:hover, .img2:hover, .img3:hover, .img4:hover {
+    transform: scale(1.1);
+    opacity: .95;
+}
+
+#profile-link {
+    height: 500px;
+    background-color: black;
+}
+#profile-link div {
+    display: flex;
+    margin-right: 10px;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    justify-content: center;
+}
+.grid-social {
+    margin-top: 150px;
+}
+.grid-social p {
+    margin-right: 20px;
+}
+#profile-link header {
+    font-size: 30px;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    text-align: center;
+}
+#profile-link div p a {
+    text-decoration: none;
+    color: white;
+}
+#profile-link div p {
+    transition: transform .5s;
+}
+#profile-link p:hover {
+    transform: translateY(10px);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1000px) {
+    .project-tile { grid-template-columns: repeat(1, 1fr); }
+  }
+@media (max-width: 1000px) {
+    .project-tile {justify-items: center; }
+  }
+@media (max-width: 1000px) {
+    #projects {
+        height: auto;
+        background-repeat: repeat; }
+  }
+@media (max-width: 1000px) {
+    .tribCap { width: 430px; }
+  }
+  
